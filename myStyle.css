@@ -1,0 +1,49 @@
+#map {
+    background-color: #000000;
+     margin: 0 auto;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    
+   
+}
+
+#key {
+    position: absolute;
+    width: 81px;
+    top: 550px;
+    margin: 0 auto;
+    /**
+     * 这里加上什么能让方向键居中呢...?
+     */
+    top: 25;
+	left: 0;
+	right: 0;
+	bottom: 30;
+}
+
+#main {
+    width: 100%;
+    text-align: center;
+}
+
+#map {
+    /**
+     * 这里加上什么能让游戏界面居中呢...?
+     */
+    top: 20;
+	left: 0;
+	right: 0;
+	bottom: 40;
+    
+}
+
+#up {
+    /**
+     * 这里加上什么能让上方向键居中呢...?
+     */
+     
+     
+	
+}

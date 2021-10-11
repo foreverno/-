@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>贪吃蛇</title>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+</head>
+<style>
+    .wallpaper{
+      background-image: url("img/3.jpg");
+      background-repeat:no-repeat;
+      width: 100%;
+      height:100%;
+      position:absolute;
+      background-size: 100% 130%;
+       top: 0;
+	   left: 0;
+	   right: 0;
+	   bottom: 0;
+      }
+    
+
+      div{width: 200px;height: 200px;position: relative;z-index: 0}
+     .div img{position: absolute;top: 0;left: 0;width: 200px;height: 200px;}
+      .div p{position: absolute;top: 0;left: 0;z-index: 10;}
+  </style>
+  
+<body  >
+    <div class="wallpaper">
+	</div>
+    
+    <div id="main">
+        <p>
+            <strong>贪吃蛇</strong>
+        </p>
+        <p>
+            按P暂停
+        </p>
+        <p>
+            按↑↓←→可控制方向
+        </p>
+        <p>
+            积分：
+            <span id="count"></span>
+        </p>
+    </div>
+    <div id="map"></div>
+    <div id="key">
+        <table>
+            <tr id="up">
+                <td><td colspan="3">
+                    <input type="button" value="↑" οnclick="snake.setKey(38);"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="←" οnclick="snake.setKey(37);"/>
+                </td>
+                <td>
+                    <input type="button" value="↓" οnclick="snake.setKey(40);" />
+                </td>
+                <td>
+                    <input type="button" value="→" οnclick="snake.setKey(39);"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
+<script src="myScript.js">
+</script>
